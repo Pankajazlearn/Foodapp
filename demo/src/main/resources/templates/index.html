@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.nisha-chaat-corner.com>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Items</title>
+</head>
+<body>
+    <h1>Food Items</h1>
+    <ul>
+        <li th:each="foodItem : ${foodItems}">
+            <span th:text="${foodItem.name}"></span> - <span th:text="${foodItem.price}"></span>
+        </li>
+    </ul>
+    <a href="/add">Add Food Item</a>
+</body>
+</html>
